@@ -3,6 +3,12 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>Simone Saviolo</Authors>
+    <Description>SyncWatcher is a file watcher that keeps two folders in sync.</Description>
+    <Copyright>(c) 2020 Simone Saviolo</Copyright>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/savissimo/sync-watcher/main/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/savissimo/sync-watcher</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/savissimo/sync-watcher</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
