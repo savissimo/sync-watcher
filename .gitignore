@@ -2,3 +2,4 @@
 /src/SyncWatcher/SyncWatcher/obj
 /src/SyncWatcher/SyncWatcher/bin
 *.user
+/Publish
