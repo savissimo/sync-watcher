@@ -9,10 +9,19 @@
     <PackageLicenseUrl>https://raw.githubusercontent.com/savissimo/sync-watcher/main/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/savissimo/sync-watcher</PackageProjectUrl>
     <RepositoryUrl>https://github.com/savissimo/sync-watcher</RepositoryUrl>
+    <ApplicationIcon>syncwatcher.ico</ApplicationIcon>
+    <PackageIcon>syncwatcher.ico</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\icons\syncwatcher.ico">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
