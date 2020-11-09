@@ -13,8 +13,8 @@ namespace SyncWatcher
 		{
 			try
 			{
-				Console.WriteLine("Loading configuration...");
-				string configFilePath = args.Length > 0 ? args[0] : "config.swconf";
+				string configFilePath = args.Length > 0 ? args[0] : "config.syncwatcher";
+				Console.WriteLine("Loading SyncWatcher file {0}...", configFilePath);
 				string configFileContents = await File.ReadAllTextAsync(configFilePath);
 				Configuration configuration = JsonConvert.DeserializeObject<Configuration>(configFileContents);
 				Console.WriteLine("Configuration loaded");
@@ -32,6 +32,10 @@ namespace SyncWatcher
 				}
 			}
 			catch (ArgumentException) { }
+			catch (FileNotFoundException)
+			{
+				Console.WriteLine("An error occurred. Please check that the SyncWatcher file exists and is accessible.");
+			}
 		}
 
 		private static void Console_CancelKeyPress(object sender, ConsoleCancelEventArgs e)
